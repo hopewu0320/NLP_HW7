@@ -15,7 +15,7 @@ if option==correction(option):
     else:
         st.error('Correction:{}'.format(correction(user_input)))
 else:
-    if option==user_input:
-        st.error('Correction:{}'.format(correction(option)))
+    if user_input==correction(option):
+        st.success('{} is the correct spelling!'.format(correction(option)))
     else:
         st.error('Correction:{}'.format(correction(user_input)))
